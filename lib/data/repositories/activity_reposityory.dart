@@ -1,0 +1,35 @@
+import 'package:open_baby_sara/data/models/activity_model.dart';
+
+abstract class ActivityRepository {
+  Future<void> saveLocallyActivity(ActivityModel activityModel);
+
+  Future<List<ActivityModel>> fetchLocalActivities({bool onlyUnsynced});
+
+  Future<void> syncActivities();
+
+  /// Pulls activities updated after last sync from Firestore and merges into SQLite.
+  Future<void> pullFromFirestore(String babyID);
+
+  /// Full two-way sync: pull first, then push unsynced local changes.
+  Future<void> fullSync(String babyID);
+
+  Future<ActivityModel?> fetchLastSleepActivity(String babyID);
+
+  Future<ActivityModel?> fetchLastPumpActivity(String babyID);
+
+  Future<List<ActivityModel>?> fetchAllTypeOfActivity(
+    String babyID,
+    String activityType,
+  );
+
+  Future<List<ActivityModel>?> fetchActivity(DateTime datetime, String babyID);
+
+  Future<List<ActivityModel>?> fetchActivityByDateRange({
+    required DateTime start,
+    required DateTime end,
+    required String babyID,
+    List<String>? activityTypes,
+  });
+  Future<void> deleteActivity(String babyID, String activityID);
+  Future<void> updateActivity(ActivityModel activityModel);
+}

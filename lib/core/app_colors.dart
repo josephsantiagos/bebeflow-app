@@ -1,0 +1,60 @@
+import 'dart:ui';
+
+class AppColors {
+  static const Color feedColor = Color(0xFFFFF4CC);
+  static const Color pumpColor = Color(0xFFFFD6E8);
+  static const Color diaperColor = Color(0xFFD7F5DC);
+  static const Color sleepColor = Color(0xFFD9E4FF);
+  static const Color growthColor = Color(0xFFE7E0FF);
+  static const Color babyFirstsColor = Color(0xFFFFE0E0);
+  static const Color teethingColor = Color(0xFFE0F7FA);
+  static const Color medicalColor = Color(0xFFFFEEDD);
+  static const Color vaccineColor = Color(0xFFE0CFFF);
+  static const Color summaryColor = Color(0xFFFFF0E1);
+  static const Color doctorVisitColor = Color(0xFFD0F0FF);
+  static const Color feverTrackerColor = Color(0xFFFFD1D1);
+  static const Color summaryHeader = Color(0xFFFFF0D9);
+  static const Color summaryBody = Color(0xFFFFF4E2);
+
+  // History Page
+  static const Color historyBackground = Color(0xFFF7F4FB);
+  static const Color historyPink = Color(0xFFFF6F91);
+  static const Color historyChipBg = Color(0xFFEDE8F5);
+
+  // Activity Icon Accent Colors (vibrant versions for icons)
+  static const Color sleepIconColor = Color(0xFF7C6CF7);
+  static const Color feedIconColor = Color(0xFFF5A623);
+  static const Color growthIconColor = Color(0xFF3DBFA0);
+  static const Color diaperIconColor = Color(0xFFE57ABA);
+  static const Color pumpIconColor = Color(0xFFFF6F91);
+  static const Color babyFirstsIconColor = Color(0xFFFF7B7B);
+  static const Color teethingIconColor = Color(0xFF26C6DA);
+  static const Color medicationIconColor = Color(0xFFFF9966);
+  static const Color feverIconColor = Color(0xFFEF5350);
+  static const Color vaccinationIconColor = Color(0xFF9C27B0);
+  static const Color doctorVisitIconColor = Color(0xFF29B6F6);
+
+  // 🎀 GIRL THEME COLORS
+  static const Color girlPrimary = Color(0xFFE91E63);
+  static const Color girlBackground = Color(0xFFFFF8E1);
+  static const Color girlAccent = Color(0xFFDCA6F5);
+  static const Color girlText = Color(0xFF333333);
+  static const Color girlButton = Color(0xFFFF4081);
+  static const Color girlCard = Color(0xFFFFF1F3);
+  static const Color girlBorder = Color(0xFFF8BBD0);
+  static const Color girlDisabled = Color(0xFFF8BBD0);
+  static const Color girlIcon = Color(0xFFD81B60);
+  static const Color girlShadow = Color(0xFFE1BEE7);
+
+  // 🚼 BOY THEME COLORS
+  static const Color boyPrimary = Color(0xFF2196F3);
+  static const Color boyBackground = Color(0xFFE3F2FD);
+  static const Color boyAccent = Color(0xFF90CAF9);
+  static const Color boyText = Color(0xFF212121);
+  static const Color boyButton = Color(0xFF42A5F5);
+  static const Color boyCard = Color(0xFFF0F7FF);
+  static const Color boyBorder = Color(0xFF64B5F6);
+  static const Color boyDisabled = Color(0xFFBBDEFB);
+  static const Color boyIcon = Color(0xFF1E88E5);
+  static const Color boyShadow = Color(0xFFB3E5FC);
+}
